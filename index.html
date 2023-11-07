@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<link href="style.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic RPS</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
 <body>
-    <div class="container">
-        <img class="div_image" src="images/testimg.jpg"/>
-        <h2 class="div_heading">Div Heading</h2>
-        <button class="btn">Button</button>
-        <input type="text" class="textbox" name="name" size="10">
+    <div class="heading">
+        <h1 class="rps">ROCK PAPER SCISSORS</h1>
     </div>
 
-    <div class="container" id="con2">
-        <img class="div_image" src="images/testimg.jpg"/>
-        <h2 class="div_heading">Div Heading</h2>
-        <button class="btn">Button</button>
-        <input type="text" class="textbox" name="name" size="10">
+    <div class="par_container"> <!--The holder for the choices-->
+
+        <div class="container" id="c_rock">
+            <img class="c_img" src="images/rock_hand.jpg"/>
+            <button class="choice_button">Rock</button>
+        </div>
+
+        <div class="container" id="c_paper">
+            <img class="c_img" src="images/paper_hand.jpg"/>
+            <button class="choice_button">Paper</button>
+        </div>
+
+        <div class="container" id="c_scissors">
+            <img class="c_img" src="images/scissors_hand.jpg"/>
+            <button class="choice_button">Scissors</button>
+        </div>
+
+    </div>
+    
+    <div class="result">
+        <div class="rel_display" id="player">
+            The results will display here
+        </div>
+
+        <div class="rel_display" id="comp">
+            The results will display here
+        </div>
+
+        <div class="rel_display" id="status">
+            The results will display here
+        </div>
     </div>
 
-    <div class="container" id="con2">
-        <img class="div_image" src="images/testimg.jpg"/>
-        <h2 class="div_heading">Div Heading</h2>
-        <button class="btn">Button</button>
-        <input type="text" class="textbox" name="name" size="10">
-    </div>
+    <script src="./script.js"></script>
 </body>
+
 </html>
